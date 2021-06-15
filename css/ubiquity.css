@@ -4,15 +4,23 @@ img{
 
 .container{
     margin: auto;
-    padding: 0 5rem;
+    padding: 0 3rem;
 }
 
+@media screen and (min-width : 992) {
+    .container{
+        padding: 0 10rem;
+    }    
+} 
 
-@media screen and (min-width : 992px) {
+@media screen and (min-width : 1200px) {
     .container{
         padding: 0 15rem;
     }    
 } 
+
+
+
 
 
 /* POLICES */
@@ -46,11 +54,76 @@ h2{
     color: #F16822;
 }
 
-*:focus {
-    outline: .2rem solid rgb(7, 245, 7);
-    outline-offset: .5rem;
+
+
+
+
+
+
+
+/* Navigation */
+.toggle-menu {
+    padding: 0.25rem 1rem;
+    color: var(--inverted);
+    background-color: rgba(0,0,0,.15);
+    border: 0;
+    border-radius: 2rem;
+    transition: .3s;
 }
 
+.toggle-menu:hover,
+.toggle-menu:focus {
+    background-color: rgba(0,0,0,.35);
+}
+
+
+.menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--accent);
+    transition: .5s;
+}
+
+.menu[hidden] {
+    display: block;
+    visibility: hidden;
+    transform: translateX(-100%);
+}
+
+.menu:not([hidden]) {
+    transform: translateX(0);
+}
+
+.menu-link {
+    display: block;
+    padding: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    background-color: rgba(0,0,0,.25);
+}
+
+@media screen and (min-width: 768px) { /* Indiquer les mesures en em avec une base de 16px - Ex : 576/16 = 36em*/
+    .toggle-menu {
+        display: none;
+    }
+
+    .menu,
+    .menu[hidden] {
+        display: flex;
+        visibility: visible;
+        position: static;
+        transform: translateX(0);
+    }
+}
 
 
 
@@ -64,7 +137,7 @@ h2{
 /* HEADER */
 .header-ubiquity{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -75,12 +148,6 @@ h2{
     right: 0;
 }
 
-@media screen and (min-width: 992px) {
-    .header-ubiquity{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
 
 .logo{
     display: flex;
@@ -127,10 +194,18 @@ h2{
     color: black;
 }
 
-.navbar-item:hover{
+.menu-link:hover,
+.menu-link:focus{
     background-color: #F16822;
     color: white;
 }
+
+
+
+
+
+
+
 
 
 /* PREMIERE SECTION : At Ubiquity, We Care */
@@ -217,6 +292,13 @@ h2{
 }
 
 
+
+
+
+
+
+
+
 /* DEUXIEME SECTION : Our Services */
 .service{
     padding: 15rem 0;
@@ -280,6 +362,13 @@ h2{
 }
 
 
+
+
+
+
+
+
+
 /* TROISIEME SECTION : What is Ubiquity */
 .about{
     background-image: url(../img/bokehback.jpeg);
@@ -319,8 +408,6 @@ h2{
     margin: 5rem 0;
 }
 
-
-
 .post-desc{
     text-align: center;
     margin: auto;
@@ -345,7 +432,6 @@ h2{
         grid-template-rows: 50% 50%;
     }
 }
-
 
 .post-item{
     list-style: none;
@@ -383,6 +469,12 @@ h2{
     text-align: center;
     margin: 0 3rem 5rem 3rem;
 }
+
+
+
+
+
+
 
 
 
@@ -453,6 +545,12 @@ h2{
 
 
 
+
+
+
+
+
+
 /* SIXIEME SECTION : Presentation Amanda Siegfried */
 .person{
     background-image: url(../img/team-bg.jpeg);
@@ -507,6 +605,10 @@ h2{
 
 
 
+
+
+
+
 /* FOOTER */
 footer{
     background-color: #333333;
@@ -521,7 +623,7 @@ footer{
     .footer-list{
         grid-template-columns: 50% 50%;
         grid-template-rows: 70% 30%;
-        padding: 10rem 2rem;
+        padding: 10rem 0;
     }
 }
 
