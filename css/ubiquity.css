@@ -1,0 +1,662 @@
+img{
+    max-width: 100%;
+}
+
+.container{
+    margin: auto;
+    padding: 0 5rem;
+}
+
+
+@media screen and (min-width : 992px) {
+    .container{
+        padding: 0 15rem;
+    }    
+} 
+
+
+/* POLICES */
+h2{
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    font-size: 3.8rem;
+    line-height: 4.6rem;
+}
+
+@media screen and (min-width: 576px) {
+    h2{
+        font-size: 4.8rem;
+        line-height: 5.6rem;
+    }
+}
+
+.desc{
+    font-family: Montserrat, sans-serif;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+.item-desc{
+    font-family: Montserrat, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.redcolor{
+    color: #F16822;
+}
+
+*:focus {
+    outline: .2rem solid rgb(7, 245, 7);
+    outline-offset: .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* HEADER */
+.header-ubiquity{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .header-ubiquity{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.logo{
+    display: flex;
+}
+
+.logo-text{
+    width: 20rem;
+    padding: 2rem ;
+    color: #707070;
+}
+
+.logo-name{
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+.logo-desc{
+    font-family: Montserrat, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+
+
+.navbar-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-item{
+    padding: 1rem;
+    list-style: none;
+}
+
+.navbar-item a{
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-item:hover{
+    background-color: #F16822;
+    color: white;
+}
+
+
+/* PREMIERE SECTION : At Ubiquity, We Care */
+.carousel{
+    padding-top: 40rem;
+    padding-bottom: 25rem;
+    background-image: url("../img/slide-1.jpeg");
+}
+
+.carousel-list{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    max-width: 118rem;
+    margin: auto;
+    margin-top: -4rem;
+}
+
+.carousel-list-item{
+    list-style: none;
+}
+
+.carousel-title{
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    font-size: 3.4rem;
+    line-height: 3.5rem;
+    text-align: center;
+    margin-bottom: 2.75rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.carousel-desc{
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.carousel-arrow{
+    padding: 5rem;
+    display: none;
+}
+
+@media screen and (min-width: 576px) {
+    .carousel-title{
+        font-size: 4.4rem;
+        line-height: 6.5rem;
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+    .carousel-desc{
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .carousel-title{
+        font-size: 6.4rem;
+        line-height: 7.5rem;
+        padding-left: 18rem;
+        padding-right: 18rem;
+    }
+    .carousel-desc{
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+    }
+    .carousel-arrow{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .carousel-title{
+        padding-left: 10rem;
+        padding-right: 10rem;
+        margin-bottom: 5rem;
+    }
+}
+
+
+/* DEUXIEME SECTION : Our Services */
+.service{
+    padding: 15rem 0;
+}
+
+.service h2, p{
+    text-align: center;
+}
+
+.service-desc{
+    text-align: center;
+    max-width: 100rem;
+    margin: 5rem auto;
+}
+
+.service-list{
+    margin: auto;
+    padding: 0 5rem;
+}
+
+@media screen and (min-width : 768px) {
+    .service-list{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        gap: 10%;
+    }
+}
+
+@media screen and (min-width : 1200px) {
+    .service-list{
+        display: flex;
+        justify-content: stretch;
+        max-width: 118rem;
+    }
+}
+
+
+.service-item{
+    list-style: none;
+}
+
+.service-item h3, p{
+    text-align: center;
+}
+
+.service-item img{
+    margin: auto;
+    padding: 5rem;
+}
+
+.service-item-title{
+    font-family: Raleway, sans-serif;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 3.2rem;
+}
+
+.service-item-desc{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+
+/* TROISIEME SECTION : What is Ubiquity */
+.about{
+    background-image: url(../img/bokehback.jpeg);
+    padding-top: 10rem;
+}
+
+.about h2, p{
+    text-align: center;
+}
+
+.about-title{
+    margin: 5rem 0;
+}
+
+.about-desc{
+    margin-bottom: 10rem;
+    color: #EEEEEE;
+    text-align: center;
+}
+
+.about img{
+    margin: auto;
+}
+
+
+/* QUATRIEME SECTION : Latest Posts */
+.post{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-color: #F9F9F9;
+}
+.post h2, p{
+    text-align: center;
+}
+
+.post-title{
+    margin: 5rem 0;
+}
+
+
+
+.post-desc{
+    text-align: center;
+    margin: auto;
+}
+
+.post-list{
+    display: grid;
+    grid-template-rows: 15% 15% 15% 15% 15% 15%;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .post-list{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33% 33% 33%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .post-list{
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 50% 50%;
+    }
+}
+
+
+.post-item{
+    list-style: none;
+    border: solid;
+    margin: 5rem 0.5rem;
+    padding: 3rem 0;
+}
+
+.post-item h3, p{
+    text-align: center;
+}
+
+.post-item img{
+    margin: auto;
+    padding: 0 3rem 0 3rem;
+}
+
+.post-item-title{
+    font-family: Raleway, sans-serif;
+    font-size: 2.2rem;
+    line-height: 3.8rem;
+    font-weight: 600;
+    margin: 2rem 1rem;
+}
+
+@media screen and (min-width: 576px) {
+    .post-item-title{
+        font-size: 4rem;
+        line-height: 4.8rem;
+        margin: 2rem 1rem;
+    }
+}
+
+.post-item-desc{
+    text-align: center;
+    margin: 0 3rem 5rem 3rem;
+}
+
+
+
+/* CINQUIEME SECTION : Fun Facts */
+.facts{
+    background-image: url(../img/fun-facts-bg.jpeg);
+}
+
+.facts{
+    padding: 10rem 0;
+}
+
+.facts h2,p{
+    text-align: center;
+}
+
+.facts-title{
+    margin-bottom: 5rem;
+}
+
+.facts-list{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 576px) {
+    .facts-list{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .facts-list{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .facts-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.facts-item{
+    list-style: none;
+}
+
+.facts-title2{
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 4.8rem;
+    line-height: 7.8rem;
+}
+
+.facts-desc{
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+
+
+/* SIXIEME SECTION : Presentation Amanda Siegfried */
+.person{
+    background-image: url(../img/team-bg.jpeg);
+    display: flex;
+    flex-direction: column;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+}
+
+.person img{
+    border-radius: 20rem;
+    margin: auto auto;
+}
+
+.person-detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+}
+
+.person-desc{
+    text-align: center;
+}
+
+.person-title{
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+    .person{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .person-detail{
+        margin-left: 5rem;
+    }
+    .person-desc{
+        text-align: left;
+    }
+    .person-title{
+        text-align: left;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+}
+
+
+
+/* FOOTER */
+footer{
+    background-color: #333333;
+}
+
+.footer-list{
+    display: grid;
+    grid-template-rows: 30% 30% 15% 25%;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-list{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 70% 30%;
+        padding: 10rem 2rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-list{
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
+
+.footer-item{
+    list-style: none;
+}
+
+.footer-title{
+    font-family: Raleway, sans-serif;
+    font-size: 2rem;
+    line-height: 1.9rem;
+    font-weight: bold;
+}
+
+.footer-list2-item{
+    font-family: Montserrat, sans-serif;
+    font-size: 2rem;
+    line-height: 4.1rem;
+    margin: 1rem 0;
+    list-style-image: url(../img/noun_arrows_3982615.svg);
+}
+
+.footer-list2-item a{
+    color: #CCCCCC;
+    text-decoration: none;
+}
+
+.tags-button{
+    font-family: Montserrat, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+    background-color: #444444;
+    margin: 1rem;
+    color: #CCCCCC;
+}
+
+.footer-item h3{
+    padding: 2rem 0;
+}
+
+.footer-tags li{
+    list-style: none;
+}
+
+
+.footer-tags{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.tags-button{
+    margin: 1rem 0;
+}
+
+.footer-contact li{
+    list-style: none;
+}
+
+.contact-item{
+    display: flex;
+    justify-content: flex-start;
+    margin: 2rem;
+}
+
+
+.contact-item img{
+    padding: 0 1rem;
+}
+
+.contact-item p{
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    line-height: 2.2rem;
+    color: #CCCCCC;
+    left: 0;
+    text-align: left;
+}
+
+.network{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 3rem 0;
+    margin: auto;
+}
+
+.network-list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.network-item{
+    list-style: none;
+    padding: 0 .5rem;
+}
+
+.copyright{
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    line-height: .5rem;
+    color: #777777;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-title{
+        font-size: 2.4rem;
+        line-height: 1.9rem;
+    }
+    .network{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .copyright{
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .contact-item{
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact-item p{
+        font-size: 2rem;
+        line-height: 2.2rem;
+        margin: auto;
+    }
+}
