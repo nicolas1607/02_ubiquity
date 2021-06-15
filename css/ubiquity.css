@@ -7,7 +7,13 @@ img{
     padding: 0 3rem;
 }
 
-@media screen and (min-width : 992) {
+.desc{
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    max-width: 100rem;
+}
+
+@media screen and (min-width : 992px) {
     .container{
         padding: 0 10rem;
     }    
@@ -23,10 +29,18 @@ img{
 
 
 
+
 /* POLICES */
-h2{
+body{
+    font-family: Montserrat, sans-serif;
+}
+
+h2, h3{
     font-family: Raleway, sans-serif;
     font-weight: bold;
+}
+
+h2{
     font-size: 3.8rem;
     line-height: 4.6rem;
 }
@@ -38,14 +52,7 @@ h2{
     }
 }
 
-.desc{
-    font-family: Montserrat, sans-serif;
-    font-size: 2.4rem;
-    line-height: 3.2rem;
-}
-
 .item-desc{
-    font-family: Montserrat, sans-serif;
     font-size: 1.6rem;
     line-height: 2.4rem;
 }
@@ -61,7 +68,7 @@ h2{
 
 
 
-/* Navigation */
+/* NAVIGATION */
 .toggle-menu {
     padding: 0.25rem 1rem;
     color: var(--inverted);
@@ -167,7 +174,6 @@ h2{
 }
 
 .logo-desc{
-    font-family: Montserrat, sans-serif;
     font-size: 1.4rem;
     line-height: 1.8rem;
 }
@@ -186,7 +192,6 @@ h2{
 }
 
 .navbar-item a{
-    font-family: Montserrat, sans-serif;
     font-weight: bold;
     font-size: 1.4rem;
     line-height: 1.8rem;
@@ -229,8 +234,6 @@ h2{
 }
 
 .carousel-title{
-    font-family: Raleway, sans-serif;
-    font-weight: bold;
     font-size: 3.4rem;
     line-height: 3.5rem;
     text-align: center;
@@ -240,7 +243,6 @@ h2{
 }
 
 .carousel-desc{
-    font-family: Montserrat, sans-serif;
     font-weight: normal;
     font-size: 2.2rem;
     line-height: 3.2rem;
@@ -301,7 +303,8 @@ h2{
 
 /* DEUXIEME SECTION : Our Services */
 .service{
-    padding: 15rem 0;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
 }
 
 .service h2, p{
@@ -310,7 +313,6 @@ h2{
 
 .service-desc{
     text-align: center;
-    max-width: 100rem;
     margin: 5rem auto;
 }
 
@@ -350,9 +352,7 @@ h2{
 }
 
 .service-item-title{
-    font-family: Raleway, sans-serif;
     font-size: 2.4rem;
-    font-weight: bold;
     line-height: 3.2rem;
 }
 
@@ -385,6 +385,8 @@ h2{
 
 .about-desc{
     margin-bottom: 10rem;
+    margin: auto;
+    margin-bottom: 10rem;
     color: #EEEEEE;
     text-align: center;
 }
@@ -396,8 +398,8 @@ h2{
 
 /* QUATRIEME SECTION : Latest Posts */
 .post{
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     background-color: #F9F9F9;
 }
 .post h2, p{
@@ -416,28 +418,19 @@ h2{
 .post-list{
     display: grid;
     grid-template-rows: 15% 15% 15% 15% 15% 15%;
-    
-}
-
-@media screen and (min-width: 768px) {
-    .post-list{
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 33% 33% 33%;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .post-list{
-        grid-template-columns: 33% 33% 33%;
-        grid-template-rows: 50% 50%;
-    }
+    gap: 1%;
+    margin-top: 5rem;    
 }
 
 .post-item{
     list-style: none;
-    border: solid;
-    margin: 5rem 0.5rem;
-    padding: 3rem 0;
+    box-shadow: 2px 2px 5px #707070;
+    padding: 5rem 0;
+}
+
+.post-link{
+    text-decoration: none;
+    color: black
 }
 
 .post-item h3, p{
@@ -450,26 +443,42 @@ h2{
 }
 
 .post-item-title{
-    font-family: Raleway, sans-serif;
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     line-height: 3.8rem;
     font-weight: 600;
     margin: 2rem 1rem;
 }
 
+.post-item-desc{
+    text-align: center;
+    margin: 3rem;
+}
+
 @media screen and (min-width: 576px) {
     .post-item-title{
-        font-size: 4rem;
+        font-size: 3.5rem;
         line-height: 4.8rem;
-        margin: 2rem 1rem;
     }
 }
 
-.post-item-desc{
-    text-align: center;
-    margin: 0 3rem 5rem 3rem;
+@media screen and (min-width: 768px) {
+    .post-list{
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 33% 33% 33%;
+        gap: 5%;
+    }
 }
 
+@media screen and (min-width: 1200px) {
+    .post{
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+    .post-list{
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 45% 45%;
+    }
+}
 
 
 
@@ -480,7 +489,7 @@ h2{
 
 /* CINQUIEME SECTION : Fun Facts */
 .facts{
-    background-image: url(../img/fun-facts-bg.jpeg);
+    background-image: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url(../img/fun-facts-bg.jpeg);
 }
 
 .facts{
@@ -528,7 +537,6 @@ h2{
 
 .facts-title2{
     text-align: center;
-    font-family: Montserrat, sans-serif;
     font-weight: bold;
     font-size: 4.8rem;
     line-height: 7.8rem;
@@ -538,7 +546,6 @@ h2{
     font-size: 2.4rem;
     line-height: 3.2rem;
     text-align: center;
-    font-family: Montserrat, sans-serif;
     font-weight: bold;
     margin-bottom: 5rem;
 }
@@ -639,14 +646,11 @@ footer{
 }
 
 .footer-title{
-    font-family: Raleway, sans-serif;
     font-size: 2rem;
     line-height: 1.9rem;
-    font-weight: bold;
 }
 
 .footer-list2-item{
-    font-family: Montserrat, sans-serif;
     font-size: 2rem;
     line-height: 4.1rem;
     margin: 1rem 0;
@@ -658,8 +662,12 @@ footer{
     text-decoration: none;
 }
 
+.footer-tags-item{
+    display: flex;
+    justify-content: center;
+}
+
 .tags-button{
-    font-family: Montserrat, sans-serif;
     font-size: 1.2rem;
     line-height: 1.2rem;
     font-weight: 600;
@@ -702,7 +710,6 @@ footer{
 }
 
 .contact-item p{
-    font-family: Montserrat, sans-serif;
     font-size: 1rem;
     line-height: 2.2rem;
     color: #CCCCCC;
@@ -728,7 +735,6 @@ footer{
 }
 
 .copyright{
-    font-family: Montserrat, sans-serif;
     font-size: 1rem;
     line-height: .5rem;
     color: #777777;
@@ -752,13 +758,8 @@ footer{
 }
 
 @media screen and (min-width: 992px) {
-    .contact-item{
-        display: flex;
-        justify-content: space-between;
-    }
     .contact-item p{
         font-size: 2rem;
         line-height: 2.2rem;
-        margin: auto;
     }
 }
